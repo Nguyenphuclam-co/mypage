@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yêu cầu đặc biệt</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: white;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 760px;
+            margin: 30px auto;
+            border: 2px solid #333;
+            padding: 30px;
+        }
+
+        h1 {
+            margin-top: 0;
+            margin-bottom: 30px;
+            font-size: 36px;
+        }
+
+        .bed-title {
+            font-size: 22px;
+            margin-bottom: 25px;
+        }
+
+        .bed-options {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            margin-bottom: 35px;
+        }
+
+        .bed-option {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 22px;
+        }
+
+        .bed-option input {
+            width: 25px;
+            height: 25px;
+        }
+
+        .special-box {
+            background-color: #f3f7f9;
+            border-radius: 12px;
+            padding: 30px;
+        }
+
+        .special-title,
+        .request-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        .checkbox-option {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .checkbox-option input {
+            width: 25px;
+            height: 25px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 140px;
+            padding: 15px;
+            font-size: 18px;
+            border: 2px solid #d8dde0;
+            border-radius: 12px;
+            resize: none;
+        }
+
+        textarea::placeholder {
+            color: #aaa;
+        }
+
+        .button-area {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #ff3366;
+            color: white;
+            border: none;
+            padding: 18px 45px;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e62e5c;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Yêu cầu đặc biệt</h1>
+
+        <form method="post" action="">
+
+            <div class="bed-title">
+                Chọn loại giường
+            </div>
+
+            <div class="bed-options">
+
+                <label class="bed-option">
+                    <input
+                        type="radio"
+                        id="giuongking"
+                        value="giuongking"
+                        name="chon_loai_giuong">
+                    <span>1 giường King</span>
+                </label>
+
+                <label class="bed-option">
+                    <input
+                        type="radio"
+                        id="giuongdon"
+                        value="giuongdon"
+                        name="chon_loai_giuong">
+                    <span>2 giường đơn</span>
+                </label>
+
+            </div>
+
+            <div class="special-box">
+
+                <div class="special-title">
+                    Yêu cầu đặc biệt
+                </div>
+
+                <label class="checkbox-option">
+                    <input
+                        type="checkbox"
+                        value="Phòng không hút thuốc"
+                        name="yeu_cau_dac_biet[]">
+                    <span>Phòng không hút thuốc</span>
+                </label>
+
+                <label class="checkbox-option">
+                    <input
+                        type="checkbox"
+                        value="Phòng ở tầng cao"
+                        name="yeu_cau_dac_biet[]">
+                    <span>Phòng ở tầng cao</span>
+                </label>
+
+                <div class="request-title">
+                    Yêu cầu riêng của bạn
+                </div>
+
+                <textarea
+                    name="yeu_cau_rieng"
+                    placeholder="Nhập yêu cầu khác"></textarea>
+
+            </div>
+
+            <div class="button-area">
+                <button type="submit">Thanh toán</button>
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
