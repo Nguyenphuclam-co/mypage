@@ -1,0 +1,68 @@
+.car-moto{
+    
+    background-color: rgb(234, 246, 251);
+    width: 400px;
+    border-top:  3px solid   cornflowerblue;
+    padding: 20px;
+    margin: auto;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+}
+.car-moto > h3{
+    font-size: 15px;
+    text-traform: uppercase;
+    color:cornflowerblue;
+}
+.tabs li {
+    display: inline;
+    font-weight: bold;
+    margin-right: 10px;
+    border-right: 2px solid #ccc;
+    padding-right: 10px;
+}
+.tabs{
+    margin-top: 10px;
+    padding-top:10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+a{
+    text-decoration: none;
+    color:#222;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+.tabs li:last-child{
+    border: none;
+}
+.car-moto img{
+    width: 100%;
+    display:block;
+    margin-bottom: 15px;
+    
+}
+.car-moto h3{
+    line-height:1.4;
+    margin-bottom: 10px;
+}
+.car-moto p{
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 15px;
+}
+.tabs li a{
+    color:#555;
+}
+.car-moto ul:not(.tabs){
+    padding-left: 18px;
+
+}
+.car-moto ul:not(tabs) li{
+    line-height:1.4;
+    margin-bottom:15px;
+}
